@@ -3,7 +3,7 @@
     "agenda-rest": "^1.3.1"
   },
   "scripts": {
-    "start": "node node_modules/agenda-rest -- --dburi \"$(printenv MONGODB_URI)\""
+    "start": "node node_modules/agenda-rest/cli.js --dburi \"$(printenv MONGODB_URI)\""
   },
   "dockerfile": {
     "secrets": [
