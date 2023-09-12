@@ -4,5 +4,10 @@
   },
   "scripts": {
     "start": "node node_modules/agenda-rest -- --dburi \"$(printenv MONGODB_URI)\""
+  },
+  "dockerfile": {
+    "secrets": [
+      "MONGODB_URI"
+    ]
   }
 }
