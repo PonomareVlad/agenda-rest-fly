@@ -34,6 +34,8 @@ FROM base
 # Copy built application
 COPY --from=build /app /app
 
+ENV DEBUG "agenda:*"
+
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 4040
 CMD [ "npm", "run", "start" ]
