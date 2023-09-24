@@ -1,16 +1,16 @@
-# fly.toml app configuration file generated for agenda-rest-fly on 2023-09-12T12:52:31+05:00
+# fly.toml app configuration file generated for agenda-rest on 2023-09-24T19:18:34+05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "agenda-rest-fly"
+app = "agenda-rest"
 primary_region = "ams"
 
 [build]
 
 [http_service]
-  force_https = true
   internal_port = 4040
+  force_https = true
   auto_stop_machines = false
   auto_start_machines = false
   min_machines_running = 1
